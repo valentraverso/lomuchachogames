@@ -11,7 +11,7 @@ It's a app store web application, created by me and a partner. The main idea of 
 Then we starting growing up and we decide to expand in other types of store like desktop app or a book store.<br>
 The app was developed in different languages like portuguese and english, but the spanish community was the bigger that we had.
 
-<img src='https://ibb.co/N1b8FRK'>
+<img src='https://i.ibb.co/FsCShpz/Captura-de-pantalla-2023-04-07-120525.png'>
 
 ## 🌐 Ecosystem of LOMUCHACHOgames
 
