@@ -10,7 +10,7 @@ I worked in LOMUCHACHOgames for about 2 or 3 years, this was a website wich more
 It's a app store web application, created by me and a partner. The main idea of the project was to give the users the capability to share APK's for Android with all the comunnity. <br>
 Then we starting growing up and we decide to expand in other types of store like desktop app or a book store.
 
-<img src='https://ibb.co/N1b8FRK'>
+<img src='https://i.ibb.co/FsCShpz/Captura-de-pantalla-2023-04-07-120525.png'>
 
 
 
