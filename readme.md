@@ -25,7 +25,7 @@ This app was based in different subdomain or branches:
 
 The admin panel is where all take live, here you could see all that happen in the ecosystem in one place.
 
-<img src='https://i.ibb.co/5jz0FXm/Captura-de-pantalla-2023-04-07-120753.png' align='center'>
+<img src='https://i.ibb.co/prC2Lrs/Untitled-design.png' align='center'>
 
 ### PC LOMUCHACHOgames
 
