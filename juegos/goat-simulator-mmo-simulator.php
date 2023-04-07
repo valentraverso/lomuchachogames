@@ -1,0 +1,9 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/conection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/tomardatos.php';
+$select = "SELECT * FROM juegos WHERE nombre = 'Goat Simulator MMO Simulator'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "";
+$texto = "<p>Goat Simulator MMO Simulator es el nuevo simulador de esta saga mas alocada de todo el planeta tierra donde el personaje principal es una hermos y sexy cabra.</p><p>En esta entrega vas a tener que luchar contra montunos feroces, descubrir cosas locas, y como siempre lo principal divertirte de la mano de esta loquita cabra que puede hacer lo que vos quieras.</p><p>Descarga <strong>Goat Simulator MMO Simulator</strong>&nbsp;gratis apk + datos obb en LOMUCHACHOgames y hace lo que se te antoje en este mundo.</p><p>Mas cosas sobre Goat Simulator MMO Simulator:</p><ul><li>&nbsp;Cinco clases diferentes</li><li>&nbsp;Hay elfos y enanitos</li><li>&nbsp;Hay un montón de contenido</li><li>&nbsp;Nivel máximo es el 101</li></ul><p>Goat Simulator MMO Simulator todavía continúa con la buena tradición anterior, los desarrolladores siempre se sorprenden por la forma en que no puedes creer, si el éxito del Goat Simulator inicial es un accidente, entonces el siguiente no puede ver la imaginación del desarrollador, pantalla no demasiado enredada, juego o tarea, solo lentamente para explorar este mundo absurdo creado por Coffee Stain, desea actualizar su percepción del juego que los jugadores pueden desear probar.</p><p>&nbsp;</p>";
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/game/v1.php';

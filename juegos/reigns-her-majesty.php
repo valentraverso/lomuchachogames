@@ -1,0 +1,9 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/conection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/tomardatos.php';
+$select = "SELECT * FROM juegos WHERE nombre = 'Reigns Her Majesty'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "4.1 o +";
+$texto = "<p>Reigns Her Majesty es la revolucionaria secuela del superexitoso juego de control táctil deslizante Reigns. Un renacimiento cultural ha brindado al mundo una nueva era de conocimientos e iluminación, pero la avaricia y la envidia siguen conspirando contra la benévola reina. Supera en ingenio y sobrevive a cuantos quieren derrocaros a tu marido y a ti deslizando hacia la izquierda o la derecha, y tomando así decisiones justas o injustas en todo tipo de asuntos de la corte. Conserva el equilibrio entre las facciones más poderosas del reino, usa objetos místicos de tu inventario y navega entre las políticas y las relaciones personales cada vez más complejas de tu dinastía.</p><p>Tus decretos reales y las impredecibles peticiones del pueblo forjarán tu mandato en el trono y el futuro de tu dinastía, capea cuidadosamente las políticas descerebradas y las súplicas más emotivas de los súbditos excéntricos del reino para hallar el equilibrio entre las facciones locales más poderosas.</p><p>Descarga&nbsp;<strong>Reigns Her Majesty</strong>&nbsp;apk ultima version&nbsp;en LOMUCHACHOgames y reina como sabes hacer.</p><p><strong>Reigns Her Majesty</strong> APK para Android es una gran opcion a la hora de elegir ente estos juegos. Algunas características de este son:</p><ul><li>Nuevo reino, nuevo drama</li><li>Inventario místico</li><li>Desafíos reales</li><li>Nerial y amigos</li></ul>";
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/game/v1.php';

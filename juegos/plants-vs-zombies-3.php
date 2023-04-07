@@ -1,0 +1,9 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/conection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/tomardatos.php';
+$select = "SELECT * FROM juegos WHERE nombre = 'Plants vs Zombies 3'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "5.0.o +";
+$texto = "<p><strong>Plants vs.Zombies 3 </strong>es la continuación de la famosa serie de juegos para dispositivos Android sobre la guerra de zombies y plantas. Ahora hay más niveles, zombis y nuevos gráficos mejorados en este maravilloso juego.</p><p>Prepárate para abonar tus plantas mientras un grupo de zombis deseosos de diversión está a punto de invadir tu casa. Utiliza tu arsenal de plantas antizombi, lanzasemillas, escudos de nueces, bombas-cereza y muchas más, para convertir en abono a zombis antes de que derriben tu puerta.&nbsp;</p><p>Sumérgete en una aventura completamente nueva. También protegerás tus casas de los zombis adherentes, prepararás un equipo de las mejores plantas y volverás a la batalla. En el juego encontrarás una variedad de nuevas ubicaciones, nuevos tipos de plantas y zombis, así como muchas tareas interesantes. Pero ten cuidado, los zombis están bien preparados, han reunido todas sus fuerzas y están listos para dar un doble golpe y recuerda cuidar de tus cerebros.</p><p>Descarga&nbsp;<strong>Plants vs.Zombies 3</strong>&nbsp;apk ultima version&nbsp;en LOMUCHACHOgames y derrota a todos los zombies.</p><p><strong>Plants vs.Zombies 3</strong> APK para Android es una gran opcion a la hora de elegir ente estos juegos. Algunas características de este son:</p><ul><li>Pre-alfa</li></ul>";
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/game/v1.php';

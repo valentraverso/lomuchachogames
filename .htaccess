@@ -1,0 +1,103 @@
+<IfModule mod_rewrite.c>
+RewriteBase /
+RewriteEngine on
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+RewriteCond %{HTTP_HOST} ^www\.lomuchachogames\.com$ [NC]  
+RewriteRule ^(.*)$ https://lomuchachogames.com/$1 [R=301,QSA,L]  
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.(.)$ [NC]
+RewriteRule ^(.)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php 
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.html
+
+</IfModule>
+
+ErrorDocument 404 /templates/q/404.php
+
+# Disable ETags
+
+Header unset ETag
+Header set Connection keep-alive
+
+FileETag None
+
+############## CACHING ############
+
+ExpiresActive On
+ExpiresDefault A2592000
+
+&lt;FilesMatch "\.(txt|xml|js)$"&gt;
+ExpiresDefault A2592000
+
+&lt;FilesMatch "\.(css)$"&gt;
+ExpiresDefault A2592000
+
+&lt;FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav|mp4|m4v|ogg|webm|aac)$"&gt;
+ExpiresDefault A2592000
+
+&lt;FilesMatch "\.(jpg|jpeg|png|gif|swf|webp)$"&gt;
+ExpiresDefault A2592000
+
+&lt;FilesMatch "\.(txt|xml|js)$"&gt;
+Header set Cache-Control "max-age=2592000"
+
+&lt;FilesMatch "\.(css)$"&gt;
+Header set Cache-Control "max-age=2592000"
+
+&lt;FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav|mp4|m4v|ogg|webm|aac)$"&gt;
+Header set Cache-Control "max-age=2592000"
+
+&lt;FilesMatch "\.(jpg|jpeg|png|gif|swf|webp)$"&gt;
+Header set Cache-Control "max-age=2592000"
+
+# COMPRESION GZIP #
+
+SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+
+AddOutputFilterByType DEFLATE "application/atom+xml" \
+"application/javascript" \
+"application/json" \
+"application/ld+json" \
+"application/manifest+json" \
+"application/rdf+xml" \
+"application/rss+xml" \
+"application/schema+json" \
+"application/vnd.geo+json" \
+"application/vnd.ms-fontobject" \
+"application/x-font-ttf" \
+"application/x-javascript" \
+"application/x-web-app-manifest+json" \
+"application/xhtml+xml" \
+"application/xml" \
+"font/eot" \
+"font/opentype" \
+"image/bmp" \
+"image/svg+xml" \
+"image/vnd.microsoft.icon" \
+"image/x-icon" \
+"text/cache-manifest" \
+"text/css" \
+"text/html" \
+"text/javascript" \
+"text/plain" \
+"text/vcard" \
+"text/vnd.rim.location.xloc" \
+"text/vtt" \
+"text/x-component" \
+"text/x-cross-domain-policy" \
+"text/xml"
+
+AddEncoding gzip svgz
+

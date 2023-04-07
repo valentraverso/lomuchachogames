@@ -1,0 +1,9 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/conection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/tomardatos.php';
+$select = "SELECT * FROM apps WHERE nombre = 'Adobe Photoshop Mix Premium'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "5.0.o +";
+$texto = "<p>Haz de tu fotografía con Photoshop Mix Premium ya que es el editor de fotos que te permite cortar y combinar imágenes, realizar un cambio de color y mejorar tus imágenes en cualquier momento y en cualquier lugar, obviamente tambien puedes compartir tus creaciones con amigos a través de las redes sociales y envíalas a Photoshop CC en tu ordenador de sobremesa para llevar a cabo tareas avanzadas de edición.</p><p>Recorta y elimina secciones de tus imágenes, o combina fotos, combina fotos a la perfección para crear imágenes divertidas o imágenes surrealistas, ajusta los colores y el contraste o aplica filtros predefinidos a tus imágenes. Mejora la imagen completa o solo una parte tocando con un dedo, la edición no destructiva implica que tus fotografías originales permanecen impecables e intactas, comparte rápida y fácilmente las imágenes en las redes sociales.</p><p>Descarga&nbsp;<strong>Adobe Photoshop Mix Premium</strong>&nbsp;apk ultima version&nbsp;en LOMUCHACHOgames y edita como mas te gusten las fotos que quieras.</p><p><strong>Adobe Photoshop Mix Premium</strong> APK para Android es una gran opcion a la hora de elegir ente estas apps. Algunas características de este son:</p><ul><li>MOD Premium</li></ul>";
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/apps/v1.php';

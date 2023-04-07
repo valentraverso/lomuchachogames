@@ -1,0 +1,9 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/conection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/tomardatos.php';
+$select = "SELECT * FROM juegos WHERE nombre = 'The Escapists: Fuga de la prisión'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "";
+$texto = "<p>Bienvenido a The Escapist full apk, acabas de cometer un crimen y tendras que escapar de carcel. Este&nbsp;es un juego único de mundo abierto de fuga carcelaria en el que vivirás entre rejas y vallas con alambre de espino. Se acabó tu vida de crimen, te han atrapado.</p><p>Este es uno de los mejores juegos de mundo abierto de escape carcelario, en el podras hacer todo tipo de cosas. Desde crear una una banda para tu escape hasta ir al baño en tu celda.</p><p>Descarga&nbsp;<strong>The Escapists: Fuga de la prision</strong>&nbsp;full apk gratis para Android en LOMUCHACHOgames y sal de la madlita carcel en la que te encuentras.</p><p>Lo que trae el&nbsp;The Escapists: Fuga de la prisión ultima version:</p><ul><li>Un juego de simulación de prisión adictivo, roba cucharas o tenedores y úsalos para cavar un túnel.</li><li>Más de 6 prisiones temáticas, intenta escapar de prisiones de mínima seguridad o de espantosas instalaciones como Alcatraz</li><li>Encuentra, roba e intercambia objetos para fabricar docenas de combinaciones para ayudarte en tu fuga</li><li>Aprovecha el patio de ejercicios para aumentar tu fuerza, útil para trepar muros</li><li>Encuentra a otros presos con los que comerciar, necesitarás cinta aislante, un destornillador o limas</li><li>Evita los detectores de contrabando. Si pasas por uno con objetos de contrabando en tu bolsillo, el nivel de alarma subirá al 99 por ciento</li></ul>";
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/game/v1.php';

@@ -1,0 +1,17 @@
+#Redireccion 301
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.pc.lomuchachogames.com [NC]
+RewriteRule ^(.*)$ https://pc.lomuchachogames.com/$1 [L,R=301]
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://pc.lomuchachogames.com
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+
+
+

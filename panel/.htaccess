@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+RewriteBase /
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php 
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^admin.lomuchachogames.com$
+RewriteRule ^(.*)$ https://admin.lomuchachogames.com/$1 [R=301,L]
+
+
+
+
+
+

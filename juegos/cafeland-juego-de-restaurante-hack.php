@@ -1,0 +1,9 @@
+<?php
+include_once '../includes/conection.php';
+include_once '../include/tomardatos.php';
+$select = "SELECT * FROM juegos WHERE nombre = 'Cafeland: Juego de Restaurante HACK'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "4.1 o +";
+$texto = "<p>Ya llego a Cafeland Mod 2.0.11, abrí tu restaurante, pone un horno unas cuantas mesas y alguna que otra decoración. Atrae a millones de clientes a tu negocio a que coman algo y espera que te dejen alguna propina para sacar bonificaciones extras de dinero y poder expandirte.</p><p>Personaliza a tu personaje y dale un aspecto muy parecido a vos o el que quieras, tambien podes visitar los restaurantes de tu amigos y hacerles regalos.</p><p>Descargar&nbsp;<strong>Cafeland: Juego de Restaurante&nbsp;HACK&nbsp;</strong>2.0.11 apk en LOMUCHACHOgames y convertite en el chef de la ciudad.</p><p>Lo que trae el apk Mod de Cafeland:</p><ul><li>Dinero Ilimitado para hacer lo que quieras</li><li>*Sirve platos de diferentes cocinas.</li><li>Cocina en varias estufas y sirve una variedad de comidas.</li><li>Desbloquea nuevas recetas y mejora tu menú.</li><li>Llena tus mostradores con deliciosos platos para complacer a tus clientes.</li><li>Elige entre una variedad de categorías de alimentos.</li><li>Haz la mejor hamburguesa en la ciudad de chefs.</li><li>Entrega mariscos de calidad.</li><li>Prepara la masa para una pizza crujiente.</li><li>Hornea un pastel de chocolate delicioso.</li><li>Prepara un guiso picante.</li><li>Hornear, freír o saltear... ¡Cada plato será tan perfecto!</li></ul>";
+include_once '../templates/game/v1.php';

@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+Disallow: /includes
+
+Sitemap: https://pc.lomuchachogames.com/sitemap_index.xml

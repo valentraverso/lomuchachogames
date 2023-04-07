@@ -1,0 +1,13 @@
+User-Agent: *
+Allow: /juegos/
+Allow: /apps/
+Allow: /help/
+Allow: /fotos/
+Disallow: /admin/
+Allow: /css/
+Allow: /fonts
+Disallow: /include
+Disallow: /js
+Disallow: /php
+Disallow: /plantillas
+Disallow: /vistas

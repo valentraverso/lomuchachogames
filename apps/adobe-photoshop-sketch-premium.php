@@ -1,0 +1,9 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/conection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/tomardatos.php';
+$select = "SELECT * FROM apps WHERE nombre = 'Adobe Photoshop Sketch Premium'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "5.0.o +";
+$texto = "<p>Dibuja con lápices, plumas, marcadores, borradores, acrílico grueso, pincel de tinta, pastel suave y color diluido para crear el trabajo artístico que podrás enviar en forma de archivos multicapa a Adobe Photoshop o Adobe Illustrator ademas tiene acceso a 11 herramientas que permiten ajustar la configuración del tamaño, el color, la opacidad y la fusión, posibilidad de crear una infinita variedad de pinceles de Sketch mediante Capture, posibilidad de añadir varias capas de imagen y dibujo que pueden reapilarse, renombrarse, transformarse y mezclarse, flexibilidad para organizar las herramientas y colores favoritos en la barra de herramientas, y capacidad de enviar los bocetos a Photoshop o Illustrator con capas preservadas.</p><p>Consigue fácil acceso a tus contenidos desde las aplicaciones, incluidas las imágenes de Adobe Stock y los pinceles creados en Capture., y busca las licencias de imágenes de alta resolución y libres de derechos de autor desde Sketch, tambien imágenes de calidad en tu trabajo.</p><p>Descarga&nbsp;<strong>Adobe Photoshop Sketch Premium</strong>&nbsp;apk ultima version&nbsp;en LOMUCHACHOgames y disfruta editando.</p><p><strong>Adobe Photoshop Sketch Premium</strong> APK para Android es una gran opcion a la hora de elegir ente estos juegos. Algunas características de este son:</p><ul><li>MOD Premium</li></ul>";
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/apps/v1.php';

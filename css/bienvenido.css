@@ -1,0 +1,13 @@
+*{font-family: 'Roboto', sans-serif;}
+body{display:grid;grid-template-columns:15% 85%;margin:0px;}
+.dios{padding: 0 2%;background:#ddd;}
+/* MENU */
+#lateral{ font-size: 18px;padding:0% 10%;}a.crear{color: #000; text-decoration: none; font-size: 15px; line-height: 30px;}.hola{text-align: center;font-size: 18px;margin:0px;background: #A9A9A9;border-radius: 0 0 5px;width:150px;}svg{color:#564747;width: 15px !important;}.k{margin-left:8px;}#logout{font-size:13px;}.user { background: #b0f3ec; padding: 10px; text-align: center; }.user img{border-radius: 50%; width: 60%;}.d{float: right; right: 0px !important; background: #14dc14; border-radius: 50%; width: 20px; text-align: center; font-size: 15px; margin-top: 4px;}.k:hover{color:#149e92;}
+/* GAMES ARRIBA */
+.buscado h2{margin:0px;}
+/* Index */
+.frases { font-size: 16px; }
+/* Box */
+.box{padding: 10px; background: #fff; margin-top: 5px;box-shadow:8px 8px 7px -1px #c5bfbf;margin: 5px 0px 20px 0px;}.tresmedio{display:grid;grid-template-columns:75% 25%;}
+/* Tablas */
+.table{width:100%;}.thead-dark{background: #b5b5b5;}

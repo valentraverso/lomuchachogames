@@ -1,0 +1,16 @@
+.formulario{
+   margin: auto;
+    width: 300px;
+    position: relative;
+    margin-top:10%;
+    border:1px solid;
+  padding: 12 0 12 70;
+  background-color: #ebebeb;
+}
+input{
+    margin-top:5px;
+    border-radius: 3px;
+}
+a.volver{
+    margin-left:-20px;
+}

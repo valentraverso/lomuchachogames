@@ -1,0 +1,9 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/conection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/tomardatos.php';
+$select = "SELECT * FROM apps WHERE nombre = 'Adobe Photoshop Fix Premium'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "5.0.o +";
+$texto = "<p>Adobe Photoshop Fix Premium permite la restauración y retoque de imágenes, de forma sencilla pero potente, en tu teléfono Android. Corrija, suavice, licue, aclare y realice otras ediciones y ajustes para obtener justo el look que desea. Acceda a fotos editadas con otras aplicaciones móviles y de escritorio de Adobe iniciando sesión en Adobe Creative Cloud para perfeccionarlas o utilizarlas en otros proyectos creativos y completamente todo ello gracias a Adobe CreativeSync, ademas le da retoque y restaura fotos con las herramientas que dan justo el look, la estructura y la sensación que desea.</p><p>Edite de forma significativa las características faciales. Cree una sonrisa más amplia, reduzca las mejillas o edite otros puntos faciales de forma notablemente sencilla, empuje, tire, rote, hinche o cambie la forma de cualquier área para crear efectos sutiles o drásticos, corrija imperfecciones mediante contenido de áreas adyacentes y luego funda el resultado, pinte para suavizar o añadir nitidez a piel, paisajes u otro contenido, aclarar y oscurecer: Añada o quite luz de partes concretas de una foto.</p><p>Descarga&nbsp;<strong>Adobe Photoshop Fix Premium</strong>&nbsp;apk ultima version&nbsp;en LOMUCHACHOgames y deslumbra con tu edición profesional.</p><p><strong>Adobe Photoshop Fix Premium</strong> APK para Android es una gran opcion a la hora de elegir ente estos juegos. Algunas características de este son:</p><ul><li>MOD Premium</li></ul>";
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/apps/v1.php';

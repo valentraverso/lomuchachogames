@@ -1,0 +1,9 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/conection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/tomardatos.php';
+$select = "SELECT * FROM juegos WHERE nombre = 'Bug Heroes 2'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "";
+$texto = "<p>En Bug Heroes 2 apk + obb, vas a meterte en batallas de bicho que se desencadenaran en el piso de tu cocina, de tu habitación, de tu comedor y hasta en tu patio.</p><p>Entra a este maravilloso mundo de pequeños bichos con bazookas, ametralladoras y francotiradoras, convertite en el mejor tirador.</p><p>Descarga&nbsp;<strong>Bug Heroes 2</strong>&nbsp;apk + datos obb gratis en LOMUCHACHOgames y hace de tu bicho el mas valiente.</p><p>Mas cosas acerca de Bug Heroes 2 full apk:</p><ul><li>Multijugador competitivo y cooperativo MOBA-como</li><li>Las toneladas de contenido para un solo jugador, incluyendo las misiones, un modo sin fin, y una base vs modo escaramuza de base</li><li>25 héroes únicos de dominar - forman su equipo de dos</li><li>Jugabilidad basada escuadrón Innovador - Control de dos héroes simultáneamente</li><li>Nivel máximo tus Héroes de errores, aumentar sus habilidades y comprar armas, armaduras y equipo</li><li>Buscar comida, y luego defender tu Stash Alimentos con torretas y actualizaciones</li><li>Completa las misiones, ganar estrellas, y desbloquear una serie de mejoras de gran alcance</li><li>Dominar tanto cuerpo a cuerpo y combate a distancia. Cortar a tus enemigos con espadas, insectos swat fuera de las repisas, los arruina desde la larga distancia con armas y magia, y más</li><li>Gameplay táctico - utilice la cubierta para derrotar a tus enemigos</li><li>Más de 75 diversos tipos de enemigos a la batalla</li><li>Sincronización a través de dispositivos con la nube ahorra</li></ul>";
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/game/v1.php';

@@ -1,0 +1,9 @@
+<?php
+include_once '../includes/conection.php';
+include_once '../include/tomardatos.php';
+$select = "SELECT * FROM juegos WHERE nombre = 'LIMBO'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "4.4 o +";
+$texto = "<p>Limbo es un rompecabezas de plataformas. El juego solo usa dos botones además de los controles de movimiento, uno para hacer que el niño salte y otro para la acción contextual, como arrastrar cajas, tirar de las palancas o empujar botones. El niño puede agarrarse a las repisas al alcance de la mano y bajarse de las plataformas, subir escaleras, empujar y tirar objetos y también balancearse desde cuerdas que se encuentran en el ambiente.</p><p>Presenta una gran cantidad de lo que el desarrollador Playdead describe como un juego de \"prueba y muerte\", que obliga a los jugadores a morir con frecuencia (y de manera espantosa) para comprender completamente los rompecabezas. El limbo tiene un sistema de punto de control extremadamente generoso con recarga casi instantánea, que generalmente hace que el niño regrese justo antes de poner una trampa o caer en un abismo, minimizando (pero sin evitar) la frustración del jugador.</p><p>Descarga <strong>LIMBO</strong> para Android gratis con Apk + datos OBB en LOMUCHACHOgames y divertite sin parar!!</p><p><strong>ROME Total War Barbarian Invasion</strong> APK + OBB para Android es una gran opcion a la hora de elegir ente estos juegos. Algunas características de este son:</p><ul><li>UN JUEGO CLÁSICO EN UN NUEVO ENTORNO</li><li>FACCIONES DE BARBAROS FORMIDABLES</li><li>CAMPAÑA SIN LÍMITES</li><li>DISEÑADO PARA MÓVILES</li><li>BATALLAS 3D COLOSALES</li></ul>";
+include_once '../templates/game/v1.php';

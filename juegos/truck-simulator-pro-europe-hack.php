@@ -1,0 +1,9 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/conection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/tomardatos.php';
+$select = "SELECT * FROM juegos WHERE nombre = 'Truck Simulator PRO Europe HACK'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "";
+$texto = "<p>Truck Simulator PRO Europe HACK es sin sin duda uno de los mas avanzados juegos de camiones para Android, orientado al detalle y más grande disponible para dispositivos móviles. ¡Para lograr la mayor eficiencia de su empresa, no olvide comprar motores más grandes y mejores ruedas! ¡Finalmente, contrate trabajadores para que hagan el trabajo por usted! ¡Conviértete en jefe de camiones!</p><p>En este juego deberas llevar diferentes cargamentos de un punto a otro en Europa, hacelo lo mas rápido posible para asi conseguir mayores ganancias y poder mejorar tus camiones.&nbsp;</p><p>Descargar <strong>Truck Simulator PRO Europe HACK </strong>APK mod + OBB gratis para Android en LOMUCHACHOgames.</p><p>En esta seccion te brindamos mas informacion acerca de Truck Simulator mod APK:</p><ul><li>Conduce 8 camiones diferentes y personalízalos según tus necesidades&nbsp;</li><li>Actualice motores, ruedas y otras piezas para que funcionen más rápido y más eficiente</li><li>Cuida la economía de tu negocio y desbloquea los envíos más rentables</li><li>Contrata asistentes para que trabajen para ti y crea una gran flota</li><li>Completa cientos de misiones diferentes</li><li>Conviértete en el imperio de camiones BOSS!</li></ul>";
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/game/v1.php';

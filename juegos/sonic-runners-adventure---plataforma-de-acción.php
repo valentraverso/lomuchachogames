@@ -1,0 +1,9 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/conection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/tomardatos.php';
+$select = "SELECT * FROM juegos WHERE nombre = 'Sonic Runners Adventure - Plataforma de acción'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "4.0.3 o +";
+$texto = "<p>Corre con Sonic, la leyenda de la velocidad y todos sus amigos en su primer juego de plataforma para móvil del 2018. Sonic el Erizo y sus amigos regresan en un juego tipo corredor lleno de acción. Contágiate de la fiebre de la velocidad mientras revives la leyenda de Sonic. Corre, salta, pica, acelera o vuela por el camino y a través del reto de emocionantes niveles de plataforma.&nbsp;</p><p>Desbloquea nuevos personajes incluidos Tails, Knuckles y más, cada uno con sus propias habilidades que puedes potenciar. Corre a salvar el universo de Sonic luchando contra el Dr. Eggman en 4 locaciones icónicas. Todo esto en una descarga compacta, para que cualquiera pueda comenzar su día con algo de acción arcade de alta velocidad.</p><p>Descarga&nbsp;<strong>Sonic Runners Adventure - Plataforma de acción</strong>&nbsp;apk ultima versión&nbsp;en LOMUCHACHOgames y revive los viejos tiempos.</p><p><strong>Sonic Runners Adventure - Plataforma de acción</strong> APK para Android es una gran opción a la hora de elegir ente estos juegos. Algunas características de este son:</p><ul><li>Acelera por 4 lugares icónicos con increíbles gráficos.</li><li>Desbloquea toneladas de personajes como Tails, Knuckles, Shadow el Erizo y más leyendas de la velocidad, cada uno con sus súper habilidades.</li><li>Supera una oleada interminable de obstáculos y villanos, ¡incluido el perverso Dr. Eggman</li></ul>";
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/game/v1.php';

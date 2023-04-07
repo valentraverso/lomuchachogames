@@ -1,0 +1,9 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/conection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/tomardatos.php';
+$select = "SELECT * FROM juegos WHERE nombre = 'After the End Forsaken Destiny'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "4.3 o +";
+$texto = "<p>El juego en general es muy bueno, como pasar por el nivel de necesidad de hacer suficiente ejercicio para hacer una lluvia de ideas sobre la preparación, pasar por el viento, regresar al impresionante mundo antiguo, disfrutar de la aventura, abrir al padre y al hijo en un tiempo y espacio diferentes para embarcarse en el mismo viaje misterioso, pero padre e hijo Los dos no son aventureros juntos, pero el jugador necesita aprovechar la diferencia de tiempo entre las dos personas para desentrañar los misterios en los restos y finalmente lograr el objetivo común de ambos padre e hijo.</p><p>El juego utiliza un diseño de pantalla 3D, por lo que los jugadores pueden moverse más libremente en la perspectiva, y esta operación también es una parte muy importante del juego, porque muchos de los órganos y tesoros están ocultos en la esquina, el juego dentro de la música. También es una característica importante del juego, la música también se tocará en caso de que una persona se encuentre con una emergencia.</p><p>Descarga&nbsp;<strong>After the End Forsaken Destiny</strong>&nbsp;apk + datos obb ultima version&nbsp;en LOMUCHACHOgames y disfruta esta aventura.</p><p><strong>After the End Forsaken Destiny</strong> APK + OBB para Android es una gran opcion a la hora de elegir ente estos juegos. Algunas características de este son:</p><ul><li>La dificultad del juego sigue siendo relativamente grande</li><li>En algunos lugares el juego dará algunos consejos</li><li>La calidad del juego sigue siendo muy satisfactoria.</li></ul>";
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/game/v1.php';

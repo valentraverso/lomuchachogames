@@ -1,0 +1,9 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/conection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/tomardatos.php';
+$select = "SELECT * FROM apps WHERE nombre = 'Adobe Photoshop Express Premium'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "4.4 o +";
+$texto = "<p>Suelta a tu creatividad en cualquier lugar con Photoshop Express Premium, el programa estándar para la edición rápida y sencilla de fotos que utilizan millones de usuarios creativos. Mejora fotos como un profesional con un estudio digital fácil de usar repleto de funciones de edición de fotos en tu dispositivo móvil, personaliza tus experiencias con bordes y texto, mejora el color y las imágenes, crea collages, corrige rápidamente y mejora tus recuerdos dignos de compartir.</p><p>Photoshop Express Premium pone a tu alcance una amplia gama de funciones de edición y efectos, corrige al momento las imágenes torcidas con Ajustes automáticos, usa la herramienta transformar para corregir ángulos distorsionados de la cámara, suaviza el grano o reduce el ruido de color para conseguir imágenes nítidas, y enfoca los detalles para optimizar las fotos.</p><p>Descarga&nbsp;<strong>Adobe Photoshop Express Premium</strong>&nbsp;apk MOD ultima version&nbsp;en LOMUCHACHOgames y edita las mejores fotos con la mejor aplicación de la actualidad en el mundo.</p><p><strong>Adobe Photoshop Express Premium</strong> APK para Android es una gran opcion a la hora de elegir ente estos juegos. Algunas características de este son:</p><ul><li>MOD Premium</li></ul>";
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/apps/v1.php';

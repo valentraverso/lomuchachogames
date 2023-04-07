@@ -1,0 +1,9 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/conection.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/includes/tomardatos.php';
+$select = "SELECT * FROM juegos WHERE nombre = 'Bike Mayhem Mountain Racing'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "4.0.3 o +";
+$texto = "<p>Carreras de ascenso y descenso con bicicleta de montaña como nunca antes lo habías visto. Corre por hermosas pistas de alto rendimiento, saltando sobre rocas y raíces, dando gigantes saltos, puntuando con combos y trucos alocados en todos los terrenos disponibles, desbloqueando bicicletas mejores y equipaje para reivindicar tus derechos de Rey de la Montaña en todo el mundo.<br>El Bike Mayhem Extreme Mountain Racing compite en carreras cronometradas o en eventos truculentos de estilo libre en 19 montañas diferentes y en más de 100 pistas inspiradas en lugares del mundo real.</p><p>Desbloquea más de 80 elementos para añadir estilo a tu bici y ajústate la velocidad, la agilidad, la fuerza y la ​​energía para cada pista. Experimenta física realista y la suave suspensión de la bici mientas arrasa todo lo áspero y suaviza los aterrizajes de los grandes saltos y caídas.</p><p>Descarga&nbsp;<strong>Bike Mayhem Mountain Racing</strong>&nbsp;apk ultima version&nbsp;en LOMUCHACHOgames y disfruta de esta aventura.</p><p><strong>Bike Mayhem Mountain Racing</strong> APK para Android es una gran opcion a la hora de elegir ente estos juegos. Algunas características de este son:</p><ul><li>Más de 100 hermosas pistas de montaña para todos los estilos de conducción</li><li>Más de 80 elementos para tu piloto y su bici de montaña</li><li>Actualizaciones de cuadros y ruedas con impacto en el juego</li><li>Épicos choques en bici, divertidos físicos de muñeca de trapo y suspensión activa de la bicicleta</li></ul>";
+include_once $_SERVER['DOCUMENT_ROOT'].'/templates/game/v1.php';

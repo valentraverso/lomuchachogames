@@ -1,0 +1,7 @@
+body{margin:0px;font-family: 'Mukta', sans-serif;}
+/* Menu */
+.menu{background: #7EBDC2; height: 50px;}.menu img{height:100%;}
+/* Links */
+.continueBox { background: #DBCBD8; text-align: center; padding: 20px; }#boton{background: #38369A; border: 0px; padding: 6px; border-radius: 3px; font-size: 20px; color: #fff;}.con{width: 50%; margin: auto; }.inDa{font-size: 20px; font-weight: 600;}.responsables{font-size:12px;color:#696363;}
+/* Index */
+.bodyContainer{padding:10%;}.buttonLOMUCHACHO{background: #DB5461; width: 50%; padding: 10px; color: #fff;text-align: center;}.PC{margin-left:50%;}.buttonLOMUCHACHO:hover{background: #ff0019;}.bodyContainer a{text-decoration:none;}.heading1{text-align:center;}

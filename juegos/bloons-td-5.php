@@ -1,0 +1,9 @@
+<?php
+include_once '../includes/conection.php';
+include_once '../include/tomardatos.php';
+$select = "SELECT * FROM juegos WHERE nombre = 'Bloons TD 5'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "2.3.3 o +";
+$texto = "<p>Bloons TD 5 es un juego defense-tower donde no deberás dejar pasar a los globos usando monos, construye torres increíbles, elige tus mejoras favoritas, contrata a fantásticos agentes especiales nuevos y revienta hasta el último bloon invasor en la mejor versión de todos los tiempos de la serie de torres de defensa más popular de la historia.<br>El juego presenta más de 20 funciones diferentes de los agentes de Monkey, usando sus diferentes características, pueden ser dirigidas a algunos globos. Cada tipo de torre puede actualizarse a través de algunos de los efectos más potentes, como el aumento de alcance o el efecto de daño de alcance explosivo.</p><p>Descargar <strong>Bloons TD 5 </strong>APK + OBB ultima version GRATIS para Android en LOMUCHACHOgames.</p><p>Mas caracteristicas del juego de defensa de torres Bloons:</p><ul><li>Juego cooperativo con dos jugadores en rutas cooperativas personalizadas</li><li>10 agentes especiales</li><li>10 misiones especiales</li><li>+250 misiones aleatorias</li><li>Nuevos enemigos bloons: bloons regeneradores y camuflados más duros y el temible ZOMG</li><li>3 modos de juego diferentes</li><li>Modo juego libre tras dominar una ruta</li><li>3 niveles de dificultad y un tema para toda la familia al que todo el mundo puede jugar</li></ul>";
+include_once '../templates/game/v1.php';

@@ -1,0 +1,9 @@
+<?php
+include_once '../includes/conection.php';
+include_once '../include/tomardatos.php';
+$select = "SELECT * FROM juegos WHERE nombre = 'Pocket City'";
+$data = $conn->query($select);
+$fila = mysqli_fetch_array($data);
+$versiondispositivo = "4.3 o +";
+$texto = "<p>El juego The Pocket City es un juego divertido que simula negocios. En el juego, el jugador se convertirá en el alcalde, creará una nueva ciudad única con su propia capacidad creativa, jugará un juego altamente gratuito y usará su imaginación. Construye diferentes lugares, ayuda a las personas a tener una vida mejor, resuelve la tasa de empleo de los ciudadanos, desbloquea más características especiales del edificio, ricos elementos de RPG para simular el juego, te permite jugar en este mundo de fantasía</p><p>Construye tu genial ciudad y conviertete en el mejor alcalde del mundo. Crea barrios, centros comerciales y lugares publicos, tambien arrasa con la delicuencia y los desastres.</p><p>Descarga <strong>Pocket City</strong> full apk gratis en LOMUCHACHOgames!!</p><p>Otras características de Pocket City ultima version:</p><ul><li>Construye una ciudad única creando zonas y edificios especiales</li><li>Desencadenar eventos divertidos como fiestas en bloques o desastres como tornados</li><li>Completa misiones para ganar XP y dinero.</li><li>Desbloquea edificios avanzados subiendo de nivel.</li><li>Desbloquear nuevos terrenos con diferentes tipos de terreno.</li><li>Tenga éxito al optimizar su flujo de efectivo, tráfico, felicidad y más&nbsp;</li><li>Disfruta de una ciudad dinámica con ciudadanos, vehículos, animales y edificios animados.</li><li>Suba su ciudad a la nube para transferirla a otro dispositivo o comparta con un amigo</li><li>Construcción de la ciudad intuitiva, basada en el tacto.</li><li>Jugable sin conexión</li></ul>";
+include_once '../templates/game/v1.php';
